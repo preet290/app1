@@ -1,3 +1,4 @@
+import 'package:app1/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,14 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String name = "preet";
-    int id = 1;
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text("Name is : $name and Id is : $id"),
-        ),
+    return  MaterialApp(
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
+        brightness: Brightness.light,
       ),
+      home: const Home(),
     );
   }
 }
