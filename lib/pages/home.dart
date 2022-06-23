@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
     String name = "preet";
     int id = 1;
     return  Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: const Text("Home Page"),),
         body: Center(
           child: Text("Name is : $name and Id is : $id"),
         ),
